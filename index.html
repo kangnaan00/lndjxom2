@@ -12,11 +12,11 @@
   th { background: #1d1d1f; color: #fff; font-size: 12px; font-weight: 600; padding: 12px 14px; text-align: left; white-space: nowrap; }
   td { font-size: 13px; padding: 11px 14px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
   tr:last-child td { border-bottom: none; }
-  tr:hover td { background: #f9f9f9; }
+  tbody tr:hover td { background: #f9f9f9; }
   a { color: #0071e3; text-decoration: none; }
   a:hover { text-decoration: underline; }
   .num { text-align: right; font-variant-numeric: tabular-nums; }
-  .tag-cpv { color: #6e6e73; font-size: 11px; }
+  tfoot td { background: #f0f0f2; font-weight: 700; }
 </style>
 </head>
 <body>
@@ -25,52 +25,69 @@
   <thead>
     <tr>
       <th>아이디</th>
-      <th>CPV</th>
-      <th>저장공유단가</th>
+      <th class="num">단가</th>
+      <th class="num">CPV</th>
+      <th class="num">저장공유단가</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="https://www.instagram.com/hotgwangju/" target="_blank">@hotgwangju</a></td>
+      <td class="num">300,000원</td>
       <td class="num">2.2원</td>
       <td class="num">2,641원</td>
     </tr>
     <tr>
       <td><a href="https://www.instagram.com/ruyuan_food/reels/" target="_blank">@ruyuan_food</a></td>
+      <td class="num">600,000원</td>
       <td class="num">2.7원</td>
       <td class="num">1,387원</td>
     </tr>
     <tr>
       <td><a href="https://www.instagram.com/adele_1017/reels/" target="_blank">@adele_1017</a></td>
+      <td class="num">350,000원</td>
       <td class="num">4.9원</td>
       <td class="num">521원</td>
     </tr>
     <tr>
       <td><a href="https://www.instagram.com/jollypong_o.o" target="_blank">@jollypong_o.o</a></td>
+      <td class="num">350,000원</td>
       <td class="num">8.8원</td>
       <td class="num">1,049원</td>
     </tr>
     <tr>
       <td><a href="https://www.instagram.com/hanipgwangju" target="_blank">@hanipgwangju</a></td>
+      <td class="num">350,000원</td>
       <td class="num">7.4원</td>
       <td class="num">1,679원</td>
     </tr>
     <tr>
       <td><a href="https://www.instagram.com/minggeurae/reels/" target="_blank">@minggeurae</a></td>
+      <td class="num">400,000원</td>
       <td class="num">8.32원</td>
       <td class="num">408원</td>
     </tr>
     <tr>
       <td><a href="https://www.instagram.com/gyun_foodstory/" target="_blank">@gyun_foodstory</a></td>
+      <td class="num">280,000원</td>
       <td class="num">10원</td>
       <td class="num">802원</td>
     </tr>
     <tr>
       <td><a href="https://www.instagram.com/ssu.blog_/reels/" target="_blank">@ssu.blog_</a></td>
+      <td class="num">300,000원</td>
       <td class="num">12원</td>
       <td class="num">2,320원</td>
     </tr>
   </tbody>
+  <tfoot>
+    <tr>
+      <td>합계 (8명)</td>
+      <td class="num">2,930,000원</td>
+      <td class="num" style="color:#6e6e73; font-weight:400;">—</td>
+      <td class="num" style="color:#6e6e73; font-weight:400;">—</td>
+    </tr>
+  </tfoot>
 </table>
 </body>
 </html>
